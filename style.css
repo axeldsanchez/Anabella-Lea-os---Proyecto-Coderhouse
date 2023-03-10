@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #68585E;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 30px;    
+    position: fixed;
+}
+
+#logoCafe {
+    text-align: center;
+}
+
+/*NAVBAR*/
+
+#barraDeNavegacion{
+    background-color: #68585E !important; 
+
+}
+
+#barraNav{
+     justify-content: flex-end;
+}
+
+#barraDeNavegacion a{
+    color: #E9E2C9 !important;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
+#pieDePagina {
+    display: flex;
+    flex-direction: row;
+    background-color: #68585E;
+    width: 100%;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 30px; 
+}
+
+.caja1Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.caja1Footer a {
+    text-decoration: none;
+    color: #E9E2C9;
+}
+
+.caja2Footer {
+    display: flex;
+    flex-direction: column;
+    color: #e0d5cf;
+}
+
+.caja2Footer div{
+    display: flex;
+}
+
+.caja2Footer ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.caja2Footer ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.caja2Footer a {
+    display: flex;
+    color: #E9E2C9;
+    align-items: center;
+}
+
+.caja3Footer h1{
+    display: flex;
+    color: #E9E2C9;
+    font-size: 15px;
+}
+
+/*HOME*/
+
+#imgBanner{
+    margin-top: 4%;
+    width: 100%;
+}
+
+.fraseHome{
+    background-color: #81606c;
+    height: 100px;
+    color: #e0d5cf;  
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bienvenida{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #313131;    
+    width: 100%;
+    height: 400px;
+    justify-content: space-evenly;
+    padding: 50px;
+    color: #e6c6b4; 
+    font-size: 18px;
+}
+
+#bienvenida div{ 
+    padding-top: 36px;
+    justify-content: center;
+}
+
+#newsletter {
+    background-color: #e6c6b4;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+}
+
+/*TIPS*/
+
+ .bodyTips {
+    background-color:#E9E2C9 ;
+ }   
+
+#publicacionesGrid {
+background-color: #E9E2C9;
+margin: 1.6em auto;
+margin-top: 200px;
+margin-bottom: 80px;
+width: 90%;
+height: 1400px;
+display: grid;
+gap: 1.6em;
+grid-template-areas: 
+"art1 art1 art3 art5"
+"art2 art2 art4 art5";
+grid-template-columns: 250px auto auto 250px;
+grid-template-rows: 50% 50%;
+justify-content: space-around;
+}
+
+.nota1{
+    grid-area: art1;
+    background-color: #9b7583;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nota1 a{
+    color: #e6c6b4;
+    font-size: 18px;
+}
+
+.nota2{
+    grid-area: art2;
+    background-color: #9b7583;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.nota2 a{
+    color: #e6c6b4;
+    font-size: 18px;
+}
+.nota3{
+    grid-area: art3;
+    background-color: #9b7583;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nota3 a{
+    color: #e6c6b4;
+    font-size: 18px;
+}
+
+.nota4{
+    grid-area: art4;
+    background-color: #9b7583;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nota4 a{
+    color: #e6c6b4;
+    font-size: 18px;
+}
+
+.nota5{
+    grid-area: art5;
+    background-color: #9b7583;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.nota5 a{
+    color: #e6c6b4;
+    font-size: 18px;
+}
+
+@media screen and (max-width:376px){
+    #publicacionesGrid{
+        grid-template-areas:
+        "art1"
+        "art2"
+        "art3"
+        "art4"
+        "art5";
+grid-template-columns: auto;
+grid-template-rows: 310px 260px 260px 310px 260px;
+font-size: 8px;
+    }
+
+    
+
+}
